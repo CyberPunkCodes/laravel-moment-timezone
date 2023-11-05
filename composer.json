@@ -1,0 +1,51 @@
+{
+    "name": "cyberpunkcodes/laravel-moment-timezone",
+    "description": "Laravel package that shows dates/times in the users timezone using Moment",
+    "keywords": [
+        "laravel",
+        "moment",
+        "momentjs",
+        "timezone",
+        "timezones",
+        "datetime",
+        "date",
+        "time"
+    ],
+    "authors": [
+        {
+            "name": "CyberPunkCodes",
+            "email": "9557392+CyberPunkCodes@users.noreply.github.com"
+        }
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/CyberPunkCodes/laravel-moment-timezone",
+    "support": {
+        "issues": "https://github.com/CyberPunkCodes/laravel-moment-timezone/issues",
+        "source": "https://github.com/CyberPunkCodes/laravel-moment-timezone"
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CyberPunkCodes\\MomentTimezone\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CyberPunkCodes\\MomentTimezone\\MomentTimezoneProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
