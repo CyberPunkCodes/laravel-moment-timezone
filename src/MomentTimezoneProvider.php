@@ -27,6 +27,14 @@ class MomentTimezoneProvider extends ServiceProvider
 
         Blade::component('moment', Moment::class, config('moment.prefix', ''));
 
+        Blade::directive('momentScripts', function (string $expression) {
+            $scripts = config('moment.assets.scripts');
+
+            if ( isset($scripts) && is_array($scripts) && ! empty($scripts) ) {
+                return implode(PHP_EOL, $scripts);
+            }
+        });
+
         if ($this->app->runningInConsole()) {
             /**
              * Publishing config files
