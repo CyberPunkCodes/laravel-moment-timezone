@@ -1,4 +1,4 @@
-<div>
+<div style="{{ $parentStyle }}">
     @if ($human)
 
         <time datetime="{{ $date->format($format) }}" {{ $attributes }}>
