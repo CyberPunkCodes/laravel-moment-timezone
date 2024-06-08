@@ -52,15 +52,18 @@ class Moment extends Component
      */
     public $local;
 
+    public $parentStyle = '';
+    
     /**
      * Create a new component instance.
      */
-    public function __construct(DateTimeInterface $date, string $format = 'm-d-Y g:i a', bool $human = false, $local = null)
+    public function __construct(DateTimeInterface $date, string $format = 'm-d-Y g:i a', bool $human = false, $local = null, $parentStyle = '')
     {
         $this->date   = Carbon::instance($date);
         $this->format = $format;
         $this->human  = $human;
         $this->local  = $local;
+        $this->parentStyle = $parentStyle;
     }
 
     /**
